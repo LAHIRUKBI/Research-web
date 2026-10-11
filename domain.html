@@ -1,22 +1,411 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Smart Agriculture Support System research project."><title>Domain | SmartAgri Research</title><link rel="stylesheet" href="styles.css"></head>
-<body id="top"><div class="announcement"><span class="pulse"></span> Undergraduate Research Project <span>•</span> R26-IT-063</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">SA<span>+</span></span><span class="brand-copy"><strong>SmartAgri</strong><small>SMART AGRICULTURE RESEARCH</small></span></a>
-  <nav class="main-nav" aria-label="Main navigation">
-    <a class="nav-link " href="index.html">Overview</a>
-    <a class="nav-link active" href="domain.html">Domain</a>
-    <a class="nav-link " href="milestones.html">Milestones</a>
-    <a class="nav-link " href="deliverables.html">Deliverables</a>
-    <a class="nav-link " href="about.html">About Us</a>
-    <a class="nav-link nav-contact " href="contact.html">Contact <span>↗</span></a>
-  </nav>
-</header><main class="page-shell"><section class="page-hero"><div class="eyebrow"><span class="eyebrow-line"></span> RESEARCH FOUNDATION</div><h1>Explore the <span>research domain.</span></h1><p>Choose a topic below to read about the research background, identified gaps, project objectives, system components and technology stack. Each topic opens as its own HTML page—no JavaScript is used.</p></section>
-<div class="domain-layout"><nav class="domain-tabs" aria-label="Research domain topics">
-<a class="domain-tab" href="literature-survey.html"><span class="domain-tab-icon">▤</span><span><strong>Literature Survey</strong><small>Existing research &amp; approaches</small></span><span class="tab-arrow">↗</span></a>
-<a class="domain-tab" href="research-gaps.html"><span class="domain-tab-icon">⌕</span><span><strong>Research Gaps</strong><small>What needs improvement</small></span><span class="tab-arrow">↗</span></a>
-<a class="domain-tab" href="problem-objectives.html"><span class="domain-tab-icon">◎</span><span><strong>Problem &amp; Objectives</strong><small>Purpose and outcomes</small></span><span class="tab-arrow">↗</span></a>
-<a class="domain-tab" href="system-components.html"><span class="domain-tab-icon">▦</span><span><strong>The 4 System Components</strong><small>How the modules fit together</small></span><span class="tab-arrow">↗</span></a>
-<a class="domain-tab" href="technologies.html"><span class="domain-tab-icon">⌘</span><span><strong>Technologies Used</strong><small>Tools and methods</small></span><span class="tab-arrow">↗</span></a>
-</nav><article class="domain-content"><span class="section-kicker">DOMAIN OVERVIEW</span><h2>Research foundations and system design</h2><p>The project explores how machine learning, soil-related data, sensor technologies and market information can support better agricultural decisions for Sri Lankan smallholder farmers.</p><div class="mini-grid"><div class="mini-card"><strong>Research background</strong><p>Review existing approaches and evidence before finalising the research gap.</p></div><div class="mini-card"><strong>Problem definition</strong><p>Describe the agricultural decision-support challenge and measurable objectives.</p></div><div class="mini-card"><strong>System design</strong><p>Present the four components and explain how their outputs support users.</p></div><div class="mini-card"><strong>Technical approach</strong><p>Document only the tools, datasets and algorithms actually used by the team.</p></div></div><div class="content-callout">Select one of the five topic cards to open its dedicated page. Update each HTML file directly when the approved research wording changes.</div></article></div></main><footer class="site-footer"><a class="footer-brand" href="index.html"><span class="brand-mark">SA<span>+</span></span> SmartAgri</a><p>Smart Agriculture Support System <span>•</span> R26-IT-063</p><a href="#top" class="back-top">Back to top ↑</a><small>© 2026 Research Project. All rights reserved.</small></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SmartAgri Domain — Research background, literature survey, research gap, problem, objectives, methodology, and technologies used." />
+  <title>Domain Overview | SmartAgri</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/inner.css" />
+  <link rel="stylesheet" href="css/inner-extra.css" />
+</head>
+<body>
+
+  <!-- Site Header (Announcement Bar + Main Navigation) -->
+  <header class="site-header" id="siteHeader">
+    <div class="announcement-bar">
+      <div class="announcement-badge">
+        <span class="announcement-dot"></span>
+        <span>Undergraduate Research Project &bull; Group R26-IT-063</span>
+      </div>
+      <span>&bull;</span>
+      <a class="announcement-link" href="http://cdap.sliit.lk/" target="_blank" rel="noopener">SLIIT CDAP Repository ↗</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="index.html">
+          <span class="logo-badge">🌱</span>
+          <span class="logo-text">Smart<span class="accent">Agri</span></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="domain.html">Domain</a></li>
+          <li><a class="nav-link" href="milestones.html">Milestones</a></li>
+          <li><a class="nav-link" href="documents.html">Documents</a></li>
+          <li><a class="nav-link" href="presentations.html">Presentations</a></li>
+          <li><a class="nav-link" href="about.html">About Us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="theme-icon-sun" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" style="display:block;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a class="nav-btn" href="documents.html">
+            <span>Deliverables</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="section-tag">Research Domain</span>
+      <h1>Domain <span class="gradient-text">Overview</span></h1>
+      <p>The academic foundations behind SmartAgri: literature review, research gaps, problem statement, objectives, methodology, system components, and technology stack.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 01: Literature Survey -->
+    <section class="domain-section" id="literature-survey">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">01</span>
+            <h2>Literature Survey</h2>
+          </div>
+
+          <div class="domain-content">
+            <p>
+              Agriculture forms the vital backbone of Sri Lanka's rural economy, yet smallholder farmers face severe productivity and economic vulnerabilities. Global precision agriculture research has increasingly deployed machine learning classifiers, IoT sensor telemetry, and predictive market models.
+            </p>
+            <p>
+              However, traditional systems remain heavily fragmented: crop prediction tools operate independently from soil nutrient assessment, IoT telemetry nodes function as high-cost standalone logging systems, and market price models analyze historical commodity statistics without offering actionable planting advice.
+            </p>
+            <p>
+              SmartAgri shifts precision agriculture into an integrated, accessible developer and farmer ecosystem, combining real-time edge telemetry with localized agronomic prediction models tailored specifically to Sri Lankan agro-ecological zones and monsoon cycles (Yala and Maha).
+            </p>
+
+            <div class="related-links">
+              <a class="inline-btn" href="documents.html">View Proposal Documents</a>
+              <a class="inline-btn" href="presentations.html">View Presentation Slides</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Research Gap -->
+    <section class="domain-section alt-bg" id="research-gap">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">02</span>
+            <h2>Research Gap</h2>
+          </div>
+
+          <div class="domain-content">
+            <div class="gap-cards">
+              <div class="gap-card">
+                <div class="gap-icon">🔍</div>
+                <h4>Fragmented Information Silos</h4>
+                <p>Prior solutions evaluate crop suitability, soil health, fertiliser dosages, and market demand in isolation, forcing farmers to interpret disjointed sources.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">🎯</div>
+                <h4>Lack of Local Agro-Climatic Sensitivity</h4>
+                <p>Global machine learning models rely on temperate foreign agricultural datasets, failing to capture Sri Lankan district microclimates and seasonal shifts.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">🧪</div>
+                <h4>Static Non-Adaptive Fertiliser Recipes</h4>
+                <p>Chemical fertiliser advisories employ static lookup recommendations without real-time telemetry of existing soil N-P-K mineral levels, causing over-fertilisation.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">📊</div>
+                <h4>Inactionable Wholesale Market Data</h4>
+                <p>Historical price records do not provide forward-looking harvest timing advice, leaving smallholder farmers vulnerable to severe market price crashes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Research Problem & Objectives -->
+    <section class="domain-section" id="research-problem">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">03</span>
+            <h2>Problem &amp; Objectives</h2>
+          </div>
+
+          <div class="domain-content">
+            <p>
+              <strong>Problem Statement:</strong> Smallholder farmers across rural Sri Lanka suffer significant crop losses, escalating input expenditures, and erratic revenue due to the lack of timely, synchronized, and accessible decision support.
+            </p>
+            <p>
+              <strong>Main Research Objective:</strong> To engineer and empirically validate an integrated, AI- and IoT-driven Smart Agriculture Support System delivering multi-variable crop recommendations, continuous soil-health telemetry, tailored nutrient &amp; fertiliser optimization, and market intelligence.
+            </p>
+
+            <h3 style="font-family: var(--font-display); font-size: 1.15rem; margin: 1.5rem 0 0.5rem;">Specific Objectives:</h3>
+            <div class="objectives-list">
+              <div class="objective-item">
+                <div class="obj-number">1</div>
+                <div class="obj-text">
+                  <strong>Crop Viability Modelling:</strong>
+                  <p>Develop a Random Forest multi-class classifier using district rainfall, temperature, and soil indicators to recommend optimal crops with cultivation guidance.</p>
+                </div>
+              </div>
+
+              <div class="objective-item">
+                <div class="obj-number">2</div>
+                <div class="obj-text">
+                  <strong>Nutrient &amp; Fertiliser Optimizer:</strong>
+                  <p>Construct a predictive model to quantify Nitrogen (N), Phosphorus (P), and Potassium (K) deficits and compute balanced fertiliser formulations.</p>
+                </div>
+              </div>
+
+              <div class="objective-item">
+                <div class="obj-number">3</div>
+                <div class="obj-text">
+                  <strong>Soil Health IoT Telemetry:</strong>
+                  <p>Architect low-cost microcontroller edge sensor nodes to continuously capture moisture, pH, and temperature with automated distress alerts.</p>
+                </div>
+              </div>
+
+              <div class="objective-item">
+                <div class="obj-number">4</div>
+                <div class="obj-text">
+                  <strong>Agricultural Market Intelligence:</strong>
+                  <p>Implement time-series price forecasting capturing wholesale trends at regional economic centers to optimize harvest selling periods.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Research Methodology -->
+    <section class="domain-section alt-bg" id="methodology">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">04</span>
+            <h2>Methodology</h2>
+          </div>
+
+          <div class="domain-content">
+            <p>
+              The research employs a quantitative, experimental engineering methodology structured across 4 synchronized phases to guarantee system stability and model accuracy.
+            </p>
+
+            <div class="method-grid">
+              <div class="method-card">
+                <span class="method-step-badge">PHASE 01</span>
+                <h4>Data Collection &amp; Telemetry</h4>
+                <p>Acquiring regional agro-climatic datasets from national meteorological repositories and streaming field sensor telemetry via IoT edge microcontroller probes.</p>
+              </div>
+
+              <div class="method-card">
+                <span class="method-step-badge">PHASE 02</span>
+                <h4>Preprocessing &amp; Feature Engineering</h4>
+                <p>Normalising continuous variables (temperature, humidity, pH, N-P-K ratios), handling telemetry outliers, and encoding seasonal attributes.</p>
+              </div>
+
+              <div class="method-card">
+                <span class="method-step-badge">PHASE 03</span>
+                <h4>Model Training &amp; Cross-Validation</h4>
+                <p>Training Random Forest and ensemble regression algorithms with K-Fold cross-validation to maximize accuracy without overfitting.</p>
+              </div>
+
+              <div class="method-card">
+                <span class="method-step-badge">PHASE 04</span>
+                <h4>System Integration &amp; Web Deployment</h4>
+                <p>Connecting edge sensor telemetry, model inference microservices, and client portal within a lightweight, responsive interface.</p>
+              </div>
+            </div>
+
+            <div class="domain-callout">
+              <strong>Evaluation Framework:</strong> System validation includes Classification Accuracy, F1-Scores, Root Mean Squared Error (RMSE), R² coefficients, and sensor telemetry latency benchmarks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: The 4 System Components -->
+    <section class="domain-section" id="system-components">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">05</span>
+            <h2>System Components</h2>
+          </div>
+
+          <div class="domain-content">
+            <p>
+              The architecture is divided into four interdependent research modules, each led by an undergraduate researcher with defined technical responsibilities:
+            </p>
+
+            <div class="gap-cards" style="margin-top: 1.5rem;">
+              <div class="gap-card">
+                <div class="gap-icon">🌱</div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--clr-primary-light); font-weight: 700;">COMPONENT 01</span>
+                <h4>Crop Recommendation &amp; Guidance</h4>
+                <p><strong>Researcher: Bandara P.A.I.A (IT22103468)</strong></p>
+                <p style="margin-top: 0.5rem;">Multi-variable Random Forest classification mapping regional climate parameters and soil properties to viable crops, with cultivation guides.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">🧪</div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--clr-primary-light); font-weight: 700;">COMPONENT 02</span>
+                <h4>Soil Nutrient &amp; Fertiliser Recommendation</h4>
+                <p><strong>Researcher: Illangasinghe I.M.L.K.B (IT22160102)</strong></p>
+                <p style="margin-top: 0.5rem;">Predictive estimation of soil Nitrogen, Phosphorus, and Potassium deficits, calculating balanced chemical fertiliser dosage recipes.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">📡</div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--clr-primary-light); font-weight: 700;">COMPONENT 03</span>
+                <h4>Soil Health Telemetry &amp; Monitoring</h4>
+                <p><strong>Researcher: Apsal K.L.T (IT22226846)</strong></p>
+                <p style="margin-top: 0.5rem;">Embedded IoT microcontroller sensor node capturing continuous field moisture and temperature, triggering automatic irrigation alerts.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">📈</div>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--clr-primary-light); font-weight: 700;">COMPONENT 04</span>
+                <h4>Agricultural Market Intelligence</h4>
+                <p><strong>Researcher: Mudiyanselage K (IT22104694)</strong></p>
+                <p style="margin-top: 0.5rem;">Time-series wholesale commodity price prediction across regional economic centers to assist farmers in timing harvest sales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 06: Technologies Used -->
+    <section class="domain-section alt-bg" id="technologies">
+      <div class="container">
+        <div class="domain-block">
+          <div class="domain-label">
+            <span class="domain-num">06</span>
+            <h2>Technologies Used</h2>
+          </div>
+
+          <div class="domain-content">
+            <p>
+              The technological stack is specifically selected to guarantee computational efficiency, low latency, and adherence to CDAP guidelines:
+            </p>
+
+            <div class="gap-cards" style="margin-top: 1.5rem;">
+              <div class="gap-card">
+                <div class="gap-icon">🤖</div>
+                <h4>AI &amp; Machine Learning</h4>
+                <p>Python 3.10+, Scikit-Learn, Pandas, NumPy, Random Forest Classifiers, Regression Ensembles, and K-Fold Cross-Validation.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">⚡</div>
+                <h4>IoT &amp; Hardware Telemetry</h4>
+                <p>ESP32 / NodeMCU 32-bit Microcontrollers, Capacitive Soil Moisture Sensors, RS485 NPK Soil Probes, and MQTT / HTTP Communication Protocols.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">☁️</div>
+                <h4>Backend &amp; API Services</h4>
+                <p>Flask / FastAPI microservices exposing model inference endpoints, SQLite historical telemetry databases, and JSON data pipelines.</p>
+              </div>
+
+              <div class="gap-card">
+                <div class="gap-icon">🌐</div>
+                <h4>Frontend &amp; Visualization</h4>
+                <p>HTML5, Modern CSS3 variables, Vanilla JavaScript, Chart.js for data visualization, and fully responsive accessible layouts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">
+            <span class="logo-badge">🌱</span>
+            <span class="logo-text">Smart<span class="accent">Agri</span></span>
+          </a>
+          <p>An AI and IoT-driven decision-support research project developed by undergraduate researchers at SLIIT.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="domain.html">Domain Overview</a></li>
+            <li><a href="milestones.html">Milestones &amp; Marks</a></li>
+            <li><a href="documents.html">Documents Archive</a></li>
+            <li><a href="presentations.html">Presentation Slides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Team</h4>
+          <ul>
+            <li><a href="about.html">Undergraduate Researchers</a></li>
+            <li><a href="about.html#supervisors">Project Supervisors</a></li>
+            <li><a href="contact.html">Contact Directory</a></li>
+            <li><a href="contact.html#template">Email Template</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Affiliation</h4>
+          <ul>
+            <li><a href="http://cdap.sliit.lk/" target="_blank" rel="noopener">CDAP Portal ↗</a></li>
+            <li><a href="https://www.sliit.lk/" target="_blank" rel="noopener">SLIIT Computing ↗</a></li>
+            <li><span>Group: R26-IT-063</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SmartAgri Research Group R26-IT-063 &bull; All Rights Reserved.</div>
+        <div>Designed in accordance with SLIIT CDAP Guidelines.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

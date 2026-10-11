@@ -1,28 +1,355 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Smart Agriculture Support System research project."><title>Overview | SmartAgri Research</title><link rel="stylesheet" href="styles.css"></head>
-<body id="top"><div class="announcement"><span class="pulse"></span> Undergraduate Research Project <span>•</span> R26-IT-063</div>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-mark">SA<span>+</span></span><span class="brand-copy"><strong>SmartAgri</strong><small>SMART AGRICULTURE RESEARCH</small></span></a>
-  <nav class="main-nav" aria-label="Main navigation">
-    <a class="nav-link active" href="index.html">Overview</a>
-    <a class="nav-link " href="domain.html">Domain</a>
-    <a class="nav-link " href="milestones.html">Milestones</a>
-    <a class="nav-link " href="deliverables.html">Deliverables</a>
-    <a class="nav-link " href="about.html">About Us</a>
-    <a class="nav-link nav-contact " href="contact.html">Contact <span>↗</span></a>
-  </nav>
-</header><main class="page-shell"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> RESEARCH • INNOVATION • AGRICULTURE</div>
-<h1>Smarter decisions.<br><span>Stronger harvests.</span></h1>
-<p class="hero-lead">An AI- and IoT-driven Smart Agriculture Support System designed to help Sri Lankan farmers make informed decisions about crops, soil health, fertiliser use and agricultural markets.</p>
-<div class="hero-actions"><a class="button button-primary" href="domain.html">Explore the research ↗</a><a class="button button-secondary" href="deliverables.html">View deliverables ↓</a></div>
-<div class="hero-note"><span class="note-icon">✳</span><span>Built around practical challenges faced by smallholder farmers in Sri Lanka.</span></div></div>
-<div class="hero-art"><div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Green agricultural fields under a bright sky"><div class="image-shade"></div><div class="image-caption"><strong>Research focus</strong><small>Data-informed agriculture</small></div></div>
-<div class="floating-card floating-top"><span class="float-icon">⌁</span><span><strong>AI + IoT</strong><small>Integrated approach</small></span></div><div class="floating-card floating-bottom"><span class="float-icon">↗</span><span><strong>4 components</strong><small>One support system</small></span></div></div></section>
-<div class="stats-strip"><div class="stat"><span class="stat-number">04</span><span class="stat-label">Research components</span></div><div class="stat"><span class="stat-number">AI + IoT</span><span class="stat-label">Core technologies</span></div><div class="stat"><span class="stat-number">Sri Lanka</span><span class="stat-label">Primary context</span></div><div class="stat"><span class="stat-number">R26-IT-063</span><span class="stat-label">Research group</span></div></div>
-<section class="section-block"><div class="section-heading"><div><span class="section-kicker">THE BIG PICTURE</span><h2>One connected system.<br><span>Four focused solutions.</span></h2></div><p>Our research brings several decision-support capabilities together to address connected agricultural needs—from choosing a crop to understanding soil nutrients and market conditions.</p></div>
-<div class="component-grid"><article class="component-card"><span class="card-number">01</span><div class="card-icon">🌱</div><h3>Crop Recommendation</h3><p>Suggests suitable crops based on location and season, with cultivation guidance to support planning.</p><span class="card-tag">Machine Learning</span></article>
-<article class="component-card"><span class="card-number">02</span><div class="card-icon">🧪</div><h3>Soil Nutrient &amp; Fertiliser Support</h3><p>Uses soil and fertiliser-related information to support nutrient assessment and fertiliser decisions.</p><span class="card-tag">Predictive Analytics</span></article>
-<article class="component-card"><span class="card-number">03</span><div class="card-icon">📡</div><h3>Soil Health Monitoring</h3><p>Combines sensor-based observations and intelligent analysis to help monitor soil conditions.</p><span class="card-tag">IoT + AI</span></article>
-<article class="component-card"><span class="card-number">04</span><div class="card-icon">📈</div><h3>Agricultural Market Intelligence</h3><p>Provides market-focused insights, including price-related information, to support better planning.</p><span class="card-tag">Market Analytics</span></article></div></section>
-<section class="mission-band"><div class="mission-symbol">✳</div><div><span class="section-kicker">OUR PURPOSE</span><h2>Make agricultural knowledge more accessible, timely and useful.</h2><p>The project explores how data, machine learning and connected technologies can help bridge information gaps for Sri Lankan smallholder farmers.</p></div><a href="about.html" class="text-link">Meet the team ↗</a></section></main><footer class="site-footer"><a class="footer-brand" href="index.html"><span class="brand-mark">SA<span>+</span></span> SmartAgri</a><p>Smart Agriculture Support System <span>•</span> R26-IT-063</p><a href="#top" class="back-top">Back to top ↑</a><small>© 2026 Research Project. All rights reserved.</small></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Agriculture Support System (SmartAgri) — AI and IoT-Driven Decision Support for Smallholder Farmers in Sri Lanka." />
+  <title>SmartAgri | AI & IoT Smart Agriculture Support System</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/inner-extra.css" />
+</head>
+<body>
+
+  <!-- Site Header (Announcement Bar + Main Navigation) -->
+  <header class="site-header" id="siteHeader">
+    <div class="announcement-bar">
+      <div class="announcement-badge">
+        <span class="announcement-dot"></span>
+        <span>Undergraduate Research Project &bull; Group R26-IT-063</span>
+      </div>
+      <span>&bull;</span>
+      <a class="announcement-link" href="http://cdap.sliit.lk/" target="_blank" rel="noopener">SLIIT CDAP Repository ↗</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="index.html">
+          <span class="logo-badge">🌱</span>
+          <span class="logo-text">Smart<span class="accent">Agri</span></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="domain.html">Domain</a></li>
+          <li><a class="nav-link" href="milestones.html">Milestones</a></li>
+          <li><a class="nav-link" href="documents.html">Documents</a></li>
+          <li><a class="nav-link" href="presentations.html">Presentations</a></li>
+          <li><a class="nav-link" href="about.html">About Us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="theme-icon-sun" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" style="display:block;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a class="nav-btn" href="documents.html">
+            <span>Deliverables</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        SLIIT Undergraduate Research Project &bull; R26-IT-063
+      </div>
+
+      <!-- Research Topic Card -->
+      <div class="research-topic-card" aria-label="Research Topic">
+        <span class="research-topic-label">Research Topic</span>
+        <h2 class="research-topic-title">
+          SMART AGRICULTURE SUPPORT SYSTEM: AI AND IOT-DRIVEN DECISION SUPPORT FOR SMALLHOLDER FARMERS IN SRI LANKA
+        </h2>
+      </div>
+
+      <h1 class="hero-title">
+        Smarter Decisions.<br>
+        <span class="gradient-text">Stronger Harvests.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        An intelligent, multi-component agriculture decision-support platform designed to help Sri Lankan farmers make data-backed choices on seasonal crop selection, soil health telemetry, chemical fertiliser dosages, and wholesale market price trends.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="domain.html" id="hero-explore-btn">
+          <span>Explore Research</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a class="btn btn-secondary" href="about.html" id="hero-team-btn">Meet the Team</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">04</span>
+          <span class="stat-label">Research Components</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">AI + IoT</span>
+          <span class="stat-label">Core Technology Stack</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">Real-time</span>
+          <span class="stat-label">Field Telemetry</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual Art: SmartAgri IoT Telemetry Console & Advisory Panel -->
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-bar">
+          <div class="window-dot red"></div>
+          <div class="window-dot yellow"></div>
+          <div class="window-dot green"></div>
+          <span class="window-title">smartagri_telemetry.py</span>
+        </div>
+
+        <div class="code-content">
+          <div class="code-line">
+            <span class="line-num">1</span>
+            <span class="code-text"><span class="kw">from</span> smartagri.engine <span class="kw">import</span> CropClassifier, SoilMonitor</span>
+          </div>
+
+          <div class="code-line">
+            <span class="line-num">2</span>
+            <span class="code-text">telemetry = SoilMonitor.<span class="fn">read_edge_node</span>(node_id=<span class="str">"NODE-01"</span>)</span>
+          </div>
+
+          <div class="code-line success-line">
+            <span class="line-num">3</span>
+            <span class="code-text"><span class="cm"># Sensors: Moisture 64.2%, pH 6.4, N: 42, P: 18, K: 180</span></span>
+            <span class="line-tag success-tag">✓ TELEMETRY OK</span>
+          </div>
+
+          <div class="code-line warning-line">
+            <span class="line-num">4</span>
+            <span class="code-text">fert_deficit = telemetry.<span class="fn">check_npk_thresholds</span>(crop=<span class="str">"Paddy"</span>)</span>
+            <span class="line-tag warn-tag">⚠ DEFICIT: N-24%</span>
+          </div>
+
+          <div class="code-line success-line">
+            <span class="line-num">5</span>
+            <span class="code-text">prediction = CropClassifier.<span class="fn">predict</span>(location=<span class="str">"Polonnaruwa"</span>, season=<span class="str">"Yala"</span>)</span>
+            <span class="line-tag success-tag">🌾 CONF: 94.8%</span>
+          </div>
+
+          <div class="code-line">
+            <span class="line-num">6</span>
+            <span class="code-text">market_trend = MarketEngine.<span class="fn">forecast_price</span>(crop=<span class="str">"Paddy"</span>, weeks=4)</span>
+          </div>
+
+          <div class="code-line">
+            <span class="line-num">7</span>
+            <span class="code-text"><span class="cm">// SmartAgri synchronized 4 components seamlessly</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agricultural Advisory & Alert Panel -->
+      <div class="alert-panel">
+        <div class="alert-item alert-high">
+          <div class="alert-severity-bar"></div>
+          <span class="alert-icon">🌾</span>
+          <div class="alert-info-text">
+            <span class="alert-title">Optimal Crop Viability Recommendation</span>
+            <span class="alert-desc">Paddy / Rice recommended · 94.8% model confidence for Yala season</span>
+          </div>
+          <span class="alert-badge high">OPTIMAL</span>
+        </div>
+
+        <div class="alert-item alert-medium">
+          <div class="alert-severity-bar"></div>
+          <span class="alert-icon">🧪</span>
+          <div class="alert-info-text">
+            <span class="alert-title">Soil Nitrogen Deficit Detected</span>
+            <span class="alert-desc">Nitrogen level 24% below target · Urea dosage recommended: 35 kg/ha</span>
+          </div>
+          <span class="alert-badge medium">ADVISORY</span>
+        </div>
+
+        <div class="alert-item alert-high">
+          <div class="alert-severity-bar"></div>
+          <span class="alert-icon">📡</span>
+          <div class="alert-info-text">
+            <span class="alert-title">IoT Soil Telemetry Active</span>
+            <span class="alert-desc">Moisture 64.2% · Temperature 28.4°C · Edge Sensor Node 01 Online</span>
+          </div>
+          <span class="alert-badge high">ONLINE</span>
+        </div>
+
+        <div class="alert-item alert-info">
+          <div class="alert-severity-bar"></div>
+          <span class="alert-icon">📈</span>
+          <div class="alert-info-text">
+            <span class="alert-title">Wholesale Market Price Uptrend Forecast</span>
+            <span class="alert-desc">Dambulla Economic Center price predicted to appreciate +12.4%</span>
+          </div>
+          <span class="alert-badge high" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">MARKET</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Core Capabilities / Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Capabilities</span>
+        <h2 class="section-title">One Connected Agriculture Ecosystem</h2>
+        <p class="section-desc">
+          SmartAgri unites four focused research modules into a unified decision-support platform, addressing the end-to-end needs of Sri Lankan farming communities.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- 01 -->
+        <article class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <span class="feature-tag">COMPONENT 01</span>
+          <h3>Crop Recommendation &amp; Cultivation Guidance</h3>
+          <p>
+            Machine learning model predicting suitable crops based on district weather, monsoon seasonality (Yala/Maha), and soil attributes, paired with actionable cultivation guidance.
+          </p>
+          <a class="feature-link" href="domain.html#system-components">Explore Module ↗</a>
+        </article>
+
+        <!-- 02 -->
+        <article class="feature-card">
+          <div class="feature-icon">🧪</div>
+          <span class="feature-tag">COMPONENT 02</span>
+          <h3>Soil Nutrient &amp; Fertiliser Recommendation</h3>
+          <p>
+            Predictive analytics estimating soil Nitrogen, Phosphorus, and Potassium (N-P-K) dynamics, delivering customized chemical fertiliser blend recipes to curb over-application.
+          </p>
+          <a class="feature-link" href="domain.html#system-components">Explore Module ↗</a>
+        </article>
+
+        <!-- 03 -->
+        <article class="feature-card">
+          <div class="feature-icon">📡</div>
+          <span class="feature-tag">COMPONENT 03</span>
+          <h3>Soil Health Monitoring &amp; Telemetry</h3>
+          <p>
+            Field-deployed IoT microcontroller sensor nodes continuously measuring volumetric soil moisture, temperature, and electrical conductivity to trigger early stress warnings.
+          </p>
+          <a class="feature-link" href="domain.html#system-components">Explore Module ↗</a>
+        </article>
+
+        <!-- 04 -->
+        <article class="feature-card">
+          <div class="feature-icon">📈</div>
+          <span class="feature-tag">COMPONENT 04</span>
+          <h3>Agricultural Market Intelligence</h3>
+          <p>
+            Time-series price forecasting and demand trend analytics capturing wholesale pricing at major regional economic centers, assisting farmers with harvest scheduling.
+          </p>
+          <a class="feature-link" href="domain.html#system-components">Explore Module ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">
+            <span class="logo-badge">🌱</span>
+            <span class="logo-text">Smart<span class="accent">Agri</span></span>
+          </a>
+          <p>
+            An AI and IoT-driven decision-support research project developed by undergraduate researchers at the Sri Lanka Institute of Information Technology (SLIIT).
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="domain.html">Domain Overview</a></li>
+            <li><a href="milestones.html">Milestones &amp; Marks</a></li>
+            <li><a href="documents.html">Documents Archive</a></li>
+            <li><a href="presentations.html">Presentation Slides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Team</h4>
+          <ul>
+            <li><a href="about.html">Undergraduate Researchers</a></li>
+            <li><a href="about.html#supervisors">Project Supervisors</a></li>
+            <li><a href="contact.html">Contact Directory</a></li>
+            <li><a href="contact.html#template">Email Template</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Affiliation</h4>
+          <ul>
+            <li><a href="http://cdap.sliit.lk/" target="_blank" rel="noopener">CDAP Portal ↗</a></li>
+            <li><a href="https://www.sliit.lk/" target="_blank" rel="noopener">SLIIT Computing ↗</a></li>
+            <li><span>Group: R26-IT-063</span></li>
+            <li><span>Academic Year: 2026</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SmartAgri Research Group R26-IT-063 &bull; All Rights Reserved.</div>
+        <div>Designed in accordance with SLIIT CDAP Guidelines.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

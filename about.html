@@ -1,130 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Smart Agriculture Support System research project.">
-    <title>About Us | SmartAgri Research</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the SmartAgri Research Team — Academic supervisors and final year undergraduate researchers at SLIIT." />
+  <title>About Us | SmartAgri</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/inner.css" />
+  <link rel="stylesheet" href="css/inner-extra.css" />
 </head>
-<body id="top">
-<div class="announcement">
-    <span class="pulse"></span> Undergraduate Research Project <span>•</span> R26-IT-063
-</div>
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <span class="brand-mark">SA<span>+</span></span>
-    <span class="brand-copy"><strong>SmartAgri</strong><small>SMART AGRICULTURE RESEARCH</small></span>
-  </a>
-  <nav class="main-nav" aria-label="Main navigation">
-    <a class="nav-link" href="index.html">Overview</a>
-    <a class="nav-link" href="domain.html">Domain</a>
-    <a class="nav-link" href="milestones.html">Milestones</a>
-    <a class="nav-link" href="deliverables.html">Deliverables</a>
-    <a class="nav-link active" href="about.html">About Us</a>
-    <a class="nav-link nav-contact" href="contact.html">Contact <span>↗</span></a>
-  </nav>
-</header>
+<body>
 
-<main class="page-shell">
-  <section class="page-hero">
-    <div class="eyebrow"><span class="eyebrow-line"></span> THE PEOPLE BEHIND THE PROJECT</div>
-    <h1>Research is a <span>team effort.</span></h1>
-    <p>Meet the academic supervisors and undergraduate researchers working on the Smart Agriculture Support System.</p>
-  </section>
+  <!-- Site Header (Announcement Bar + Main Navigation) -->
+  <header class="site-header" id="siteHeader">
+    <div class="announcement-bar">
+      <div class="announcement-badge">
+        <span class="announcement-dot"></span>
+        <span>Undergraduate Research Project &bull; Group R26-IT-063</span>
+      </div>
+      <span>&bull;</span>
+      <a class="announcement-link" href="http://cdap.sliit.lk/" target="_blank" rel="noopener">SLIIT CDAP Repository ↗</a>
+    </div>
 
-  <!-- Project Supervisors Section -->
-  <section class="team-section">
-    <div class="team-heading">
-      <div>
-        <span class="section-kicker">ACADEMIC GUIDANCE</span>
-        <h2>Project Supervisors</h2>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-logo" href="index.html">
+          <span class="logo-badge">🌱</span>
+          <span class="logo-text">Smart<span class="accent">Agri</span></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="domain.html">Domain</a></li>
+          <li><a class="nav-link" href="milestones.html">Milestones</a></li>
+          <li><a class="nav-link" href="documents.html">Documents</a></li>
+          <li><a class="nav-link" href="presentations.html">Presentations</a></li>
+          <li><a class="nav-link active" href="about.html">About Us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="theme-icon-sun" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon-moon" style="display:block;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a class="nav-btn" href="documents.html">
+            <span>Deliverables</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="section-tag">The Team</span>
+      <h1>Meet the <span class="gradient-text">SmartAgri Team</span></h1>
+      <p>A dedicated team of SLIIT final-year undergraduate researchers and academic supervisors engineering precision agriculture decision solutions.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="team-section">
+      <div class="container">
+
+        <!-- 1. Undergraduate Researchers Section -->
+        <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+          <span class="section-tag">RESEARCHERS</span>
+          <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800;">Undergraduate Research Team (R26-IT-063)</h2>
+        </div>
+
+        <div class="team-grid">
+          <!-- Leader: Member 1 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/member1.jpg" alt="Illangasinghe I.M.L.K.B" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Illangasinghe I.M.L.K.B</h3>
+                <span class="leader-badge">👑 Team Leader</span>
+              </div>
+              <span class="member-id">IT22160102</span>
+              <span class="member-role">Soil Nutrient (N-P-K) Prediction &amp; Fertiliser Recommendation</span>
+              <p>
+                Leads research group R26-IT-063 and develops predictive regression models mapping soil N-P-K nutrient depletion to balanced chemical fertiliser dosage formulations.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Soil Nutrients</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Fertiliser Optimization</span>
+              </div>
+              <a class="member-email" href="mailto:lahiruilangasinha@gmail.com">
+                ✉️ lahiruilangasinha@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/member2.png" alt="Bandara P.A.I.A" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Bandara P.A.I.A</h3>
+              </div>
+              <span class="member-id">IT22103468</span>
+              <span class="member-role">Crop Recommendation &amp; Cultivation Season Guidance</span>
+              <p>
+                Develops multi-class Random Forest classifiers integrating regional rainfall, temperature, and soil pH to recommend viable crops with month-by-month cultivation guides.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Random Forest</span>
+                <span class="tag">Crop Suitability</span>
+                <span class="tag">Seasonality</span>
+              </div>
+              <a class="member-email" href="mailto:it22103468@my.sliit.lk">
+                ✉️ it22103468@my.sliit.lk
+              </a>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/member3.png" alt="Apsal K.L.T" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Apsal K L T</h3>
+              </div>
+              <span class="member-id">IT22226846</span>
+              <span class="member-role">Soil Health Telemetry &amp; IoT Edge Sensor Architecture</span>
+              <p>
+                Engineers microcontroller IoT field telemetry nodes capturing continuous volumetric moisture and environmental data, implementing edge anomaly triggers for automated alerts.
+              </p>
+              <div class="member-tags">
+                <span class="tag">IoT Architecture</span>
+                <span class="tag">ESP32</span>
+                <span class="tag">Sensor Telemetry</span>
+              </div>
+              <a class="member-email" href="mailto:it22226846@my.sliit.lk">
+                ✉️ it22226846@my.sliit.lk
+              </a>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/member4.png" alt="Mudiyanselage K" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Mudiyanselage K</h3>
+              </div>
+              <span class="member-id">IT22104694</span>
+              <span class="member-role">Agricultural Market Intelligence &amp; Wholesale Price Forecasting</span>
+              <p>
+                Constructs time-series econometric models forecasting weekly wholesale price trajectories across regional economic centers to protect farmers against price crashes.
+              </p>
+              <div class="member-tags">
+                <span class="tag">Price Forecasting</span>
+                <span class="tag">Market Analytics</span>
+                <span class="tag">Time-Series</span>
+              </div>
+              <a class="member-email" href="mailto:it22104694@my.sliit.lk">
+                ✉️ it22104694@my.sliit.lk
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Academic Supervisors Section -->
+        <div class="section-header" style="text-align: left; margin: 4rem 0 2.5rem;" id="supervisors">
+          <span class="section-tag">ACADEMIC SUPERVISION</span>
+          <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 800;">Project Supervisors</h2>
+        </div>
+
+        <div class="supervisors-grid">
+          <!-- Supervisor 1 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/supervisor1.jpg" alt="Ms. Hansika Mahaadikara" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Ms. Hansika Mahaadikara</h3>
+              </div>
+              <span class="member-id" style="color: var(--clr-accent);">Project Supervisor</span>
+              <span class="member-role">Senior Lecturer &bull; Department of Information Technology, SLIIT</span>
+              <p>Provides academic oversight, research design guidance, methodology validation, and algorithmic verification for the project.</p>
+              <div class="member-tags">
+                <span class="tag">Supervisor</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">AI Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Supervisor 2 -->
+          <div class="team-card">
+            <div class="member-avatar">
+              <img src="images/supervisor2.jpg" alt="Ms. Sanjeevi Chandrasiri" />
+            </div>
+            <div class="member-info">
+              <div class="member-header">
+                <h3>Ms. Sanjeevi Chandrasiri</h3>
+              </div>
+              <span class="member-id" style="color: var(--clr-accent);">Co-Supervisor</span>
+              <span class="member-role">Lecturer &bull; Department of Computer Systems Engineering, SLIIT</span>
+              <p>Provides specialized technical supervision for IoT edge architectures, telemetry protocols, and hardware calibration.</p>
+              <div class="member-tags">
+                <span class="tag">Co-Supervisor</span>
+                <span class="tag">IoT Hardware</span>
+                <span class="tag">Embedded Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">
+            <span class="logo-badge">🌱</span>
+            <span class="logo-text">Smart<span class="accent">Agri</span></span>
+          </a>
+          <p>An AI and IoT-driven decision-support research project developed by undergraduate researchers at SLIIT.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Research</h4>
+          <ul>
+            <li><a href="domain.html">Domain Overview</a></li>
+            <li><a href="milestones.html">Milestones &amp; Marks</a></li>
+            <li><a href="documents.html">Documents Archive</a></li>
+            <li><a href="presentations.html">Presentation Slides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Team</h4>
+          <ul>
+            <li><a href="about.html">Undergraduate Researchers</a></li>
+            <li><a href="about.html#supervisors">Project Supervisors</a></li>
+            <li><a href="contact.html">Contact Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Affiliation</h4>
+          <ul>
+            <li><a href="http://cdap.sliit.lk/" target="_blank" rel="noopener">CDAP Portal ↗</a></li>
+            <li><a href="https://www.sliit.lk/" target="_blank" rel="noopener">SLIIT Computing ↗</a></li>
+            <li><span>Group: R26-IT-063</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SmartAgri Research Group R26-IT-063 &bull; All Rights Reserved.</div>
+        <div>Designed in accordance with SLIIT CDAP Guidelines.</div>
       </div>
     </div>
-    <div class="supervisor-grid">
-      <article class="person-card">
-        <div class="person-avatar">
-          <img src="images/supervisor1.jpg" alt="Ms. Hansika Mahaadikara">
-        </div>
-        <div>
-          <span class="person-role">Project Supervisor</span>
-          <h3>Ms. Hansika Mahaadikara</h3>
-          <p>Academic guidance &amp; research supervision</p>
-        </div>
-      </article>
-      <article class="person-card">
-        <div class="person-avatar">
-          <img src="images/supervisor2.jpg" alt="Ms. Sanjeevi Chandrasiri">
-        </div>
-        <div>
-          <span class="person-role">Co-Supervisor</span>
-          <h3>Ms. Sanjeevi Chandrasiri</h3>
-          <p>Research guidance &amp; technical support</p>
-        </div>
-      </article>
-    </div>
-  </section>
+  </footer>
 
-  <!-- Undergraduate Researchers Section -->
-  <section class="team-section">
-    <div class="team-heading">
-      <div>
-        <span class="section-kicker">RESEARCH &amp; DEVELOPMENT</span>
-        <h2>Undergraduate Researchers</h2>
-      </div>
-    </div>
-    <div class="researcher-grid">
-      <article class="researcher-card">
-        <div class="person-avatar">
-          <img src="images/member1.jpg" alt="Illangasinghe I.M.L.K.B">
-        </div>
-        <span class="person-role">Undergraduate Researcher</span>
-        <h3>Illangasinghe I.M.L.K.B</h3>
-        <p>Soil Nutrient (N-P-K) Prediction &amp; Fertiliser Recommendation</p>
-        <div class="person-id">IT22160102</div>
-      </article>
-      
-      <article class="researcher-card">
-        <div class="person-avatar">
-          <img src="images/member2.png" alt="Researcher 02">
-        </div>
-        <span class="person-role">Undergraduate Researcher</span>
-        <h3>Bandara P.A.I.A</h3>
-        <p>Crop Recommendation &amp; Cultivation Guidance</p>
-        <div class="person-id">IT22103468</div>
-      </article>
-      
-      <article class="researcher-card">
-        <div class="person-avatar">
-          <img src="images/member3.png" alt="Researcher 03">
-        </div>
-        <span class="person-role">Undergraduate Researcher</span>
-        <h3>Apsal K L T
-</h3>
-        <p>Soil Health Monitoring</p>
-        <div class="person-id">IT22226846</div>
-      </article>
-      
-      <article class="researcher-card">
-        <div class="person-avatar">
-          <img src="images/member4.png" alt="Researcher 04">
-        </div>
-        <span class="person-role">Undergraduate Researcher</span>
-        <h3>Mudiyanselage K
-</h3>
-        <p>Agricultural Market Intelligence</p>
-        <div class="person-id">IT22104694</div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <a class="footer-brand" href="index.html"><span class="brand-mark">SA<span>+</span></span> SmartAgri</a>
-  <p>Smart Agriculture Support System <span>•</span> R26-IT-063</p>
-  <a href="#top" class="back-top">Back to top ↑</a>
-  <small>© 2026 Research Project. All rights reserved.</small>
-</footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
