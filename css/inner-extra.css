@@ -60,3 +60,24 @@
   font-size: 1.2rem;
   color: var(--clr-accent);
 }
+
+/* Light Mode Overrides */
+[data-theme="light"] .domain-callout {
+  background: #edf7f0;
+  border-left-color: #059669;
+  color: #1e3a2b;
+}
+
+[data-theme="light"] .domain-callout strong {
+  color: #047857;
+}
+
+[data-theme="light"] .download-note {
+  background: #edf7f0;
+  border-color: rgba(16, 185, 129, 0.25);
+  color: #2b563e;
+}
+
+[data-theme="light"] .download-note-icon {
+  color: #059669;
+}

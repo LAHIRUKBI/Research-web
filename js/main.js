@@ -80,6 +80,14 @@
           navToggle.classList.remove('open');
         });
       });
+
+      // Close mobile menu when clicked outside
+      document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('open') && !siteHeader.contains(e.target)) {
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('open');
+        }
+      });
     }
 
     // ---- Intersection Observer: Animate on Scroll ----
