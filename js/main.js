@@ -139,13 +139,9 @@
 
     // File download buttons listener
     document.querySelectorAll('.file-download-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', () => {
         const name = btn.getAttribute('data-file-name') || 'Document';
-        const url = btn.getAttribute('data-download-url');
-        if (url) {
-          window.open(url, '_blank');
-          showSitePopup('success', 'Download Started', `Downloading "${name}". Please check your browser downloads folder.`);
-        }
+        showSitePopup('success', 'Download Started', `Downloading "${name}". Please check your browser downloads folder.`);
       });
     });
   });
